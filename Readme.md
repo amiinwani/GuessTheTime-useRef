@@ -42,6 +42,9 @@ ONCE YOU ESTABLISH A VARIABLE OUTSIDE OF THE FUNCTION WHICH YOU ARE EXPORTING
 
     if you have a value that must be managed but isnt really a state i.e you want to trigger a UI update
 
+MODAL IS A DIALOGUE 
+    - on top of the screen
+
 
 for me personally there is no benefit of going into a medical college but i am dead eyed headed that way - here is the thing about me i have so much blieve in me that i am going to pull something off that i don't care that far, but that is the thing this blieve has been going on for the past 3 years exactly lol and shit hasen't changed since 
 
