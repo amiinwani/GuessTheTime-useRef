@@ -23,5 +23,8 @@ export default function Player() {
 //other wise we are doing a shit ton of work just to have a little thing 
 // doing it using the this will save computer power 
 
+//adding times and challenges
+
+//when start challlenge button is pressend the challenge should be started
 
 
