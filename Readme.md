@@ -20,9 +20,15 @@ HOW AND WHAT
 REACT IS ALL ABOUT NOT MAUPALTING THE DOM YOURSELF
     
 WHEN A REF CHANGES THE COPONENT FUNCTION DOES NOT RE-EXECUTE
-    -when you do the same thing with an stt
+    -when you do the same thing with an STATE VARIABLE THE COMPONENT WILL BE REEXECUTED
 
-for me personally there is no benefit of going into a medical college but i am dead eyed headed that way - here is the thing about me i have so much blieve in me that i am going to pull something off that i don't care that far, but that is the thing this blieve has been going on for the past 3 years exactly lol and shit hasen't changed since --
+    CHANGE IN REF - dosen't reexecute the Componenet
+    CHANGE IN STATE - does rerender the Component
+
+
+for me personally there is no benefit of going into a medical college but i am dead eyed headed that way - here is the thing about me i have so much blieve in me that i am going to pull something off that i don't care that far, but that is the thing this blieve has been going on for the past 3 years exactly lol and shit hasen't changed since 
+
 
 this i will pull it off ::::
+
 
