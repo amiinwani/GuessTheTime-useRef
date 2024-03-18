@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import { ResultModal } from './ResultModal';
 
 
 export const TimerChalllenge = ({title , targetTime}) => {
@@ -6,11 +7,13 @@ export const TimerChalllenge = ({title , targetTime}) => {
     const [timerExpired , setTimerExpired] = useState(false)
 
     const timer = useRef();
+    const dialog = useRef();
 
     function handleStart(){
         
         timer.current = setTimeout(() => {
             setTimerExpired(true)
+            dialog.current.showModal()
         } , targetTime * 1000 )
         
         setTimerStarted(true)
@@ -18,10 +21,11 @@ export const TimerChalllenge = ({title , targetTime}) => {
 
     function handleStop(){
         clearTimeout(timer.current)
-        setTimerStarted(false)
     }
 
   return (
+    <>
+   { <ResultModal ref={dialog} targetTime={targetTime} result={"lossed "}/>}
     <section className='challenge'>
         <h2>{title}</ h2>
         {timerExpired && "you lost"}
@@ -38,6 +42,7 @@ export const TimerChalllenge = ({title , targetTime}) => {
             {timerstarted ? "Timer is Running" : "Timer Inactive"}
         </p>
     </section>
+    </>
   )
 }
 

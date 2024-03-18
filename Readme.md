@@ -44,6 +44,26 @@ ONCE YOU ESTABLISH A VARIABLE OUTSIDE OF THE FUNCTION WHICH YOU ARE EXPORTING
 
 MODAL IS A DIALOGUE 
     - on top of the screen
+    - we can use ofModal method to call the function periodically - or do it intentionally
+
+FORWARD REF
+    - we cannot pass down the ref noramlly using the props so we have to use Forward ref
+
+    - Wrapping the whole reciecving function in forward ref
+    - this gives that fucntion another argument - this argumet is not an prosp rather the next argument after the prop 
+        
+        -({...props} , ref)
+
+    - this argument is has to be named ref 
+    - then we also pass the value of the ref which we want to pass into here from the actall start
+
+
+
+
+
+
+
+
 
 
 for me personally there is no benefit of going into a medical college but i am dead eyed headed that way - here is the thing about me i have so much blieve in me that i am going to pull something off that i don't care that far, but that is the thing this blieve has been going on for the past 3 years exactly lol and shit hasen't changed since 
