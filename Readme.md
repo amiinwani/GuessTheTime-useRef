@@ -1,3 +1,6 @@
+MAIN FUCKIGN THING 
+    - REF IS USED TO ACESS THE DOM ELEMENTS(ONE REF PER HTML ELEMENT) AND NOT TRIGGER COMPONENT RERENDER
+
 WHERE ARE THE USE  CASES
     - read the value inside of the input field at the time of the click of a button
     - well we first constantly check for the value inside of the input filed then store that in a state 
@@ -57,6 +60,9 @@ FORWARD REF
     - this argument is has to be named ref 
     - then we also pass the value of the ref which we want to pass into here from the actall start
 
+CALLING AN STATE UPDATING FUNCTION DIRECTLY INSIDE OF THE SAME FUNCTION 
+    - can lead to an infinite loop
+    - 
 
 
 

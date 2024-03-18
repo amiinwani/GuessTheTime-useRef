@@ -1,8 +1,20 @@
 import React from 'react'
-import { forwardRef } from 'react'
+import { forwardRef , useImperativeHandle , useRef} from 'react'
 
 export const ResultModal = forwardRef (function  ResultModal({ result , targetTime } , ref ) {
-  return (
+    const dialog =  useRef()
+
+    useImperativeHandle(
+        ref , () =>{
+            return{
+                open(){
+                    dialog.current.showmodal();
+                }
+            }
+        }
+    )
+ 
+    return (
     <dialog ref={ref} className='result-modal' open >
         <h2>Your {result}</h2>
         <p>The Target time was
@@ -27,6 +39,9 @@ export const ResultModal = forwardRef (function  ResultModal({ result , targetTi
 //forwarding a ref -- using the pros simply
 //dialog element has built in modal method which you can call reffering to the element then an whih
 //can be used to render peridiocally
+
+
+
 
 
  
