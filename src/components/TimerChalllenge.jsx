@@ -14,11 +14,11 @@ export const TimerChalllenge = ({title , targetTime}) => {
     if(timeRemaining <= 0){
         clearInterval(timer.current);
         setTimeRemaining(targetTime * 1000)
-        dialog.current.open()
+
     }
 
     function handleStart(){
-        
+         
         timer.current = setInterval(() => {
             timer.current = setTimeRemaining(prevTime => prevTime - 10 );
         } , 10 )
